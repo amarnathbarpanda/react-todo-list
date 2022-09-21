@@ -48,6 +48,7 @@
     margin: 0 auto;
     margin-top: 3rem;
     overflow-y: auto;
+    position: relative;
 }
 
 #list::-webkit-scrollbar {
@@ -81,4 +82,11 @@
 
 .strike{
     text-decoration: line-through;
+}
+
+.loader{
+    position: absolute;
+    left: 44%;
+    top: 42%;
+    transform: translate(-50%, -50%);
 }
