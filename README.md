@@ -6,6 +6,8 @@
 # ScreenShots
 - Folder structure
   ![Directory Structure](images/folder_structure.png)
+ - Todo Screen
+ ![Todo Screen](images/Todo.png)
 
 # Getting Started with Create React App
 
