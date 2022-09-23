@@ -27,11 +27,11 @@ export const addTodo = async (todo) => {
     }
 }
 
-export const changeTodoStatus = async (id, status) => {
+export const updatedToDo = async (id, todo) => {
 
     const config = {
-        method: 'PATCH',
-        body: JSON.stringify(status),
+        method: 'PUT',
+        body: JSON.stringify(todo),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },

@@ -80,11 +80,6 @@
     text-align: justify;
 }
 
-.completed{
-    color: gray;
-    text-decoration: line-through;
-}
-
 .loader{
     position: absolute;
     left: 44%;
