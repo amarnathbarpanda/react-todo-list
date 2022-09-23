@@ -26,7 +26,7 @@ const TodoItem = ({ todo, setTodoItem, setEdit, todosState: {todos, setTodos}}) 
     <li className='list__item'>
      
       <span>{todo.title}</span>
-      <EditRoundedIcon className='delete__icon' color='info' sx={{ fontSize: '2rem', marginLeft: 1 }} onClick={() => onEdit(todo)} />
+      <EditRoundedIcon className='delete__icon' color='info' sx={{ fontSize: '2rem', marginLeft: 2, marginRight: 2 }} onClick={() => onEdit(todo)} />
       <DeleteRoundedIcon className='delete__icon' color='error' sx={{ fontSize: '2rem', marginLeft: 1 }} onClick={() => onDelete(todo.id)}/>
     </li>
   )

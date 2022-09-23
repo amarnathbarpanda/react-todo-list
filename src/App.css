@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: 60%;
+    width: 65%;
     max-width: 50rem;
     height: 90%;
     background: rgba(0, 0, 0);
@@ -85,4 +85,10 @@
     left: 44%;
     top: 42%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px){
+    .container{
+        width: 90%;
+    }
 }
