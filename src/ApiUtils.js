@@ -1,5 +1,3 @@
-import { LocalGasStationSharp } from "@mui/icons-material";
-
 const url = 'https://jsonplaceholder.typicode.com/todos';
 
 export const getTodos = async () => {
@@ -29,18 +27,18 @@ export const addTodo = async (todo) => {
     }
 }
 
-export const markTodoAsDone = async (todo) => {
+export const changeTodoStatus = async (id, status) => {
 
     const config = {
-        method: 'POST',
-        body: JSON.stringify(todo),
+        method: 'PATCH',
+        body: JSON.stringify(status),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
-        }
+        },
     }
 
     try {
-        const res = await fetch(url, config);
+        const res = await fetch(`${url}/${id}`, config);
         return res.json();
     } catch (err) {
         console.log(err);

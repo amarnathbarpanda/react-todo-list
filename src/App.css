@@ -80,7 +80,8 @@
     text-align: justify;
 }
 
-.strike{
+.completed{
+    color: gray;
     text-decoration: line-through;
 }
 

@@ -29,6 +29,10 @@ function App() {
   }
 
   const onAddToDo = async () => {
+    if(!todos.title){
+      toast.error('Todo Name cannot be blank.', { position: 'top-right', style: { fontSize: 15 } });
+      return;
+    }
 
     const data = await addTodo(todoItem);
     const updatedTodos = [...todos, data];
@@ -61,7 +65,7 @@ function App() {
         </div>
         <ul id='list'>
           {todos.length > 0 ? (todos.map((todo) => (
-            <TodoItem key={todo.id} todo={todo} />
+            <TodoItem key={todo.id} todosState={{todos, setTodos}}   todo={todo} />
           ))) : (<CircularProgress className='loader' />)}
         </ul>
       </div>
