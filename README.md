@@ -5,7 +5,7 @@
 
 # ScreenShots
 - Folder structure
-  ![Folder Struture](images/folder_structure.png)
+  ![Directory Structure](images/folder_structure.png)
 
 # Getting Started with Create React App
 
