@@ -29,7 +29,7 @@ function App() {
   }
 
   const onAddToDo = async () => {
-    if(!todos.title){
+    if (!todoItem.title){
       toast.error('Todo Name cannot be blank.', { position: 'top-right', style: { fontSize: 15 } });
       return;
     }

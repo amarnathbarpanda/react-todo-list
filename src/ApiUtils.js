@@ -44,3 +44,16 @@ export const changeTodoStatus = async (id, status) => {
         console.log(err);
     }
 }
+export const deleteTodo = async (id) => {
+
+    const config = {
+        method: 'DELETE'
+    }
+
+    try {
+        const res = await fetch(`${url}/${id}`, config);
+        return res.json();
+    } catch (err) {
+        console.log(err);
+    }
+}
