@@ -1,3 +1,12 @@
+# Todo List App
+- This is a basic todo app which enables user to create, update and delete todos with an elegant UI.
+- This app is built using HTML, CSS, React.JS and Material UI.
+- All the dummy todos are fetched using jsonplaceholder.
+
+# ScreenShots
+- Folder structure
+  ![Folder Struture](images/folder_structure.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
